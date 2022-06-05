@@ -1,0 +1,44 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Categories</li>
+    </ol>
+</nav>
+
+  <div class="container">
+
+    <div class="row mt-5 mb-3">
+        <div class="col-4 text-end">
+            <button type="button" class="btn btn-" routerLink="/admin/add-category">
+                <mat-icon aria-hidden="false" aria-label="Example add_circle icon" color="primary">add_circle</mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <table class="table table-hover table-bordered">
+        <caption>List of book categories</caption>
+        <thead class="thead-dark text-center">
+            <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Category</th>
+            <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody class="table-light" *ngFor="let data of categoryList; let i = index ">
+            <tr>
+                <th scope="row" class="text-center">{{i+1}}</th>
+                <td>{{data.namakategori}}</td>
+                <td>
+                    <button type="button" class="btn btn-warning" (click)="edit(data)">
+                        <mat-icon aria-hidden="false" aria-label="Example edit icon" color="primary">edit</mat-icon>
+                    </button>
+                    <button type="button" class="btn btn-danger" style="margin-left: 10px;" (click)="delete(data)">
+                        <mat-icon aria-hidden="false" aria-label="Example delete icon" color="primary">delete</mat-icon>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+  </div>
+  

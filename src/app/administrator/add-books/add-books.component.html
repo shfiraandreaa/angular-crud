@@ -1,0 +1,51 @@
+<div class="container">
+
+    <div class="row mt-5 mb-3">
+         <div class="col-4 text-end">
+         <button type="button" class="btn btn-success" routerLink="/admin/books">List Books</button>
+     </div>
+    <div class="card mt-5" style="width: 50rem; margin-left: 125px;">
+       <div class="card-header" style="background-color: #519259; color: white;">
+         Add Data Books
+       </div>
+       <div class="card-body">
+         <div class="form-label mb-3">
+           <label class="form-label">Title Books:</label>
+           <input type="text" class="form-control" placeholder="Title Books" aria-label="Title Books" [(ngModel)]="books.nama">
+         </div>
+
+         <div class="form-label mb-3">
+            <label class="form-label">Categories Books:</label>
+            <select class="form-control" aria-label="Category" [(ngModel)]="books.kategori_id">
+                <option >Choose Categories</option>
+                <option *ngFor="let data of dataCategory;" [value]="data.id" >{{data.namakategori}}</option>
+              </select>
+          </div>
+         
+         <div class="form-label mb-3">
+            <label class="form-label">Description :</label>
+            <textarea class="form-control" placeholder="Description" aria-label="deskripsi"  [(ngModel)]="books.deskripsi"></textarea>
+          </div>
+
+          <div class="form-label mb-3">
+            <label class="form-label">Publisher :</label>
+            <input type="text" class="form-control" placeholder="Publisher" aria-label="publisher"  [(ngModel)]="books.penerbit">
+          </div>
+
+          <div class="form-label mb-3">
+            <label class="form-label">Publication Year :</label>
+            <input type="text" max="4" class="form-control" placeholder="Publication Year" aria-label="publicationYear"  [(ngModel)]="books.tahun">
+          </div>
+
+         <div class="row">
+           <div class="col-2">
+             <button type="button" class="btn btn-secondary" style="width: 100px;">Cancel</button>
+           </div>
+           <div class="col-2">
+             <button type="button" class="btn btn-success" style="width: 100px; background-color: #557C55 !important; " (click)="save()" >Save</button>
+           </div>
+         </div>
+       </div>
+     </div>
+     
+ </div>

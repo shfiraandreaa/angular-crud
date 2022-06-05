@@ -1,0 +1,28 @@
+<div class="container">
+
+    <div class="row mt-5 mb-3">
+         <div class="col-4 text-end">
+         <button type="button" class="btn btn-success" routerLink="/admin/categories">List Category</button>
+     </div>
+    <div class="card mt-5" style="width: 50rem; margin-left: 125px;">
+       <div class="card-header" style="background-color: #519259; color: white;">
+         {{ titlePage }}
+       </div>
+       <div class="card-body">
+         <div class="form-label mb-3">
+           <label class="form-label">Name Category :</label>
+           <input type="text" class="form-control" placeholder="Name Category" aria-label="namakategori" [(ngModel)]="category.namakategori">
+         </div>
+
+         <div class="row">
+           <div class="col-2">
+             <button type="button" class="btn btn-secondary" style="width: 100px;" (click)="cancel()">Cancel</button>
+           </div>
+           <div class="col-2">
+             <button type="button" class="btn btn-success" style="width: 100px; background-color: #557C55 !important; " (click)="save()">{{desc}}</button>
+           </div>
+         </div>
+       </div>
+     </div>
+     
+ </div>

@@ -1,0 +1,36 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Books</li>
+    </ol>
+</nav>
+
+<div class="container">
+
+    <div class="row mt-5 mb-3">
+        <div class="col-4 text-end">
+            <button type="button" class="btn btn-" routerLink="/admin/add-books">
+                <mat-icon aria-hidden="false" aria-label="Example add_circle icon" color="primary">add_circle</mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <table datatable [dtOptions]="dtOptions"  class="table row-border hover">
+        <caption>List of book categories</caption>
+        <thead class="thead-dark text-center">
+            <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Website</th>
+            </tr>
+        </thead>
+        <tbody class="table-light">
+            <tr *ngFor="let data of data; ">
+                <td>{{data.nama}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.website}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,167 @@
+<!-- <ng-image-slider [images]="imgCollection" #nav></ng-image-slider> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
+  <title>Book</title>
+</head>
+<body>
+
+  <!-- navbar-->
+
+    <nav class="navbar">
+   
+      <a class="navbar-brand" href="#" >
+        <img src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" style="margin-left: 190px;">
+      </a>
+  
+      <ul class="nav" >
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#">Pages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Blog</a>
+        </li>
+      </ul>
+  
+      <div class="button-menu">
+        <button type="button" class="btn" >
+          <i class="fas fa-align-right"></i>
+        </button>
+      </div>
+    
+    </nav>
+   <!-- end navbar -->
+
+    <!-- main -->
+  <main role="main">
+
+     <!-- jumbotron -->
+    <div class="container">
+      
+      <div class="jumbotron " style=" background-image: url('./assets/img/cover-book0016.jpg');">
+        <div class="position-relative overflow-hidden p-md-3 text-center text-white">
+          <div class="col-md-12 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal" style="font-family: 'Spectral', serif;">Welcome</h1>
+            <h1 class="display-4 font-weight-normal" style="font-family: 'Spectral', serif;">to</h1>
+            <h1 class="display-4 font-weight-normal" style="font-family: 'Spectral', serif;">Book Store</h1>
+            <br>
+            <a class="btn btn-ouline-light" href="#" style=" background-color: #1F1D36; color: #fff;">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+     </div>
+     <!-- end jumbotron -->
+
+    <!-- container Best Seller Books Carousel-->
+
+      <div class="container">
+        <section class="page-section">
+        <h1 class="text-center">Best Seller Books</h1>
+      <br><br>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators text-end" data-slide-to="0" class="active" data-target="#carouselExampleIndicators"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                          <a href="">
+                            <img [src]=image class="card-img-top" alt="..." >
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                          <a href="">
+                            <img [src]=image class="card-img-top" alt="..." >
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                          <a href="">
+                            <img [src]=image class="card-img-top" alt="..." >
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                          <a href="">
+                            <img [src]=image class="card-img-top" alt="..." >
+                          </a>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    
+    <!-- end container Best Seller Books Carousel-->
+
+  </main>
+ <!-- end main -->
+</body>
+</html>

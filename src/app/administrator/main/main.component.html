@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+      <mat-toolbar>
+        <img src="assets/img/Books-icon.png" alt="">
+      </mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item routerLink="./home">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" color="primary">home</mat-icon>
+          <span class="material-icons-outlined" >Home</span>
+        </a>
+        <a mat-list-item routerLink="./categories">
+          <mat-icon aria-hidden="false" aria-label="Example category icon" color="accent">category</mat-icon>
+          <span class="material-icons-outlined">Categories</span>
+        </a>
+        <a mat-list-item routerLink="./books">
+          <mat-icon aria-hidden="false" aria-label="Example library_books icon" color="warn">library_books</mat-icon>
+          <span class="material-icons-outlined" >Books</span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>angular-buku</span>
+      </mat-toolbar>
+      <!-- Add Content Here -->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  
+</body>
+</html>

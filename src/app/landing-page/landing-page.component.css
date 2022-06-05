@@ -1,0 +1,56 @@
+.navbar-brand img{
+    margin-left: 190px;
+}
+.nav-item a{
+    color: black; 
+    font-family: 'Signika', sans-serif; 
+    padding: 0.5rem 1.2rem !important;
+}
+.nav-item a:hover{
+    background-color: #3F3351;
+    color: white;
+    border-radius: 20%; 
+}
+.button-menu{
+    margin-right: 190px;
+}
+.jumbotron{
+    /* background-color: #4B3869 !important; */
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 650px !important;
+}
+.jumbotron a:hover{
+    background-color: #fff !important; 
+    color: #3F3351 !important;
+}
+.position-relative{
+    width:50%; margin: 16rem; 
+    background-color: #864879; 
+    border-radius: 100%; 
+    margin-top:50px!important;
+    box-shadow: 3px 3px 10px rgba(153, 151, 151, 0.89);
+}
+.page-section{
+    /* padding-top: 100px; */
+    height: 700px;
+    margin-top: 70px;
+}
+.carousel-indicators{
+    justify-content: left !important;
+    margin-left: 0% !important;
+    top: auto;
+    bottom: -100px;
+}
+.carousel-indicators li{
+    background-color: #d6d3d3;
+}
+.carousel-indicators .active{
+    background-color:  #BAABDA;
+}
+.card img{
+    width: 80%;
+    height: 50%;
+    padding-left: 50px;
+}

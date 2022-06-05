@@ -1,0 +1,14 @@
+.breadcrumb{
+    background-color: transparent;
+    border-radius: 0px;
+}
+.breadcrumb a{
+    text-decoration: none;
+}
+nav{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.container{
+    margin-left: 10px !important;
+}
